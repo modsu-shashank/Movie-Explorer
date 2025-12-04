@@ -1,0 +1,70 @@
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    min-height: 300px;
+}
+
+.error-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-primary);
+    z-index: 9999;
+}
+
+.error-content {
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease;
+}
+
+.error-icon {
+    color: var(--error-color);
+    margin-bottom: var(--spacing-md);
+    animation: scaleIn 0.5s ease;
+}
+
+.error-icon svg {
+    width: 64px;
+    height: 64px;
+}
+
+.error-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.error-message {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.error-retry-btn {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-md);
+}
+
+.error-retry-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.error-retry-btn:active {
+    transform: translateY(0);
+}

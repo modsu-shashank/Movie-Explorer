@@ -12,5 +12,8 @@ export default defineConfig({
         changeOrigin: true
       }
     }
+  },
+  build: {
+    // Production API URL will be set via environment variable
   }
 })

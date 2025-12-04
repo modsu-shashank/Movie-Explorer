@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: movie-explorer-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: TMDB_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
